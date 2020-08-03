@@ -26,7 +26,7 @@ require 'pry'
 #   end
 # end
 
-remove_strawberry(contacts)
+# remove_strawberry(contacts)
 
 def remove_strawberry(contacts)
   contacts.each do |person, contact_details_hash|
