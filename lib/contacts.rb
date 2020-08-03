@@ -26,35 +26,24 @@ require 'pry'
 #   end
 # end
 
-# remove_strawberry(contacts)
-
-def remove_strawberry(contacts)
-  contacts.each do |person, contact_details_hash|
-    if person == "Freddy Mercury"
-      contact_details_hash.each do |attribute, data|
-        if attribute == :favorite_ice_cream_flavors
-          data.each do |ice_cream|
-            if ice_cream == "strawberry"
-              data.delete("strawberry")
-            end
-          end
-        end
-      end
-    end
-  end
-  # binding.pry
-end
 
 
-
-
-  # iterate directly over "Freddy Mercury"
+# more explicit method
 # def remove_strawberry(contacts)
-#   contacts["Freddy Mercury"].each do |data_group, data|
-#     if data == "strawberry"
-#       data.delete"strawberry"
-#       contacts
+#   contacts.each do |person, contact_details_hash|
+#     if person == "Freddy Mercury"
+#       contact_details_hash.each do |attribute, data|
+#         if attribute == :favorite_ice_cream_flavors
+#           data.each do |ice_cream|
+#             if ice_cream == "strawberry"
+#               data.delete("strawberry")
+#             end
+#           end
+#         end
+#       end
 #     end
-#   binding.pry
+#   end
+#   # binding.pry
 # end
-# end
+
+
